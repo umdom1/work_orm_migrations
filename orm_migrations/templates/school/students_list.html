@@ -8,7 +8,7 @@
   {% for student in students %}
     <li>{{ student.name }} {{ student.group }} <br>
      Преподаватель:
-      {% for teacher in students.students.all %}
+      {% for teacher in student.teachers.all %}
       {{ teacher.name }}
       {% endfor %}
     </li>
